@@ -1,2 +1,5 @@
-JediQuotes is a small python script that users twitter-python wrapper to automatically post daily tweets on http://twitter.com/jediquotes.
+JediQuotes is a small python script that uses the twitter-python wrapper to automatically post daily tweets on http://twitter.com/jediquotes.
 
+You can modify the "config" file to add your tokens and consumer secret/key.
+
+That's it!
