@@ -10,8 +10,6 @@ credentials=dict()
 for key, value in config.items("Credentials"):
 	credentials[key]=value
 
-print credentials
-
 f = open ("jediquotes", "r")
 
 data = []
