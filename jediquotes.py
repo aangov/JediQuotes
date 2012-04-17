@@ -4,18 +4,19 @@ import twitter
 import random
 import ConfigParser
 
-config=ConfigParser.ConfigParser()
+config = ConfigParser.ConfigParser()
 config.read("config")
-credentials=dict()
+credentials = dict()
+
 for key, value in config.items("Credentials"):
-	credentials[key]=value
+    credentials[key]=value
 
 f = open ("jediquotes", "r")
 
 data = []
-	
+
 for line in f.readlines():
-	data.append(line)
+    data.append(line)
 
 api = twitter.Api(**credentials)
 
