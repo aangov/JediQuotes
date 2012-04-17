@@ -12,11 +12,7 @@ for key, value in config.items("Credentials"):
     credentials[key]=value
 
 f = open ("jediquotes", "r")
-
-data = []
-
-for line in f.readlines():
-    data.append(line)
+data = f.readlines()
 
 api = twitter.Api(**credentials)
 
