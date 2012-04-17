@@ -6,10 +6,7 @@ import ConfigParser
 
 config = ConfigParser.ConfigParser()
 config.read("config")
-credentials = dict()
-
-for key, value in config.items("Credentials"):
-    credentials[key]=value
+credentials = dict(config.items("Credentials"))
 
 f = open ("jediquotes", "r")
 data = f.readlines()
